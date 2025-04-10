@@ -1,0 +1,14 @@
+.slider {
+    position: relative;
+    width: 100%;
+    margin: auto;   /* centers everything horizontally */
+    overflow: hidden;
+}
+
+.slider img {
+    width: 100%;
+    display: none; /* prevents all the images from being displayed right away */
+}
+
+
+
