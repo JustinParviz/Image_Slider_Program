@@ -5,8 +5,13 @@ let slideIndex = 0;
 let intervalId = null;
 
 
-function initializeSlider() {
+initializeSlider();
 
+function initializeSlider() {
+    if (slides.length > 0) {
+        slides[slideIndex].classList.add("displaySlide");
+        intervalId = setInterval(nextSlide, 5000);
+    }
 }
 
 function showSlide(index) {

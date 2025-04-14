@@ -10,5 +10,8 @@
     display: none; /* prevents all the images from being displayed right away */
 }
 
+img.displaySlide {
+    display: block;
+}
 
 
