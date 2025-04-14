@@ -5,7 +5,7 @@ let slideIndex = 0;
 let intervalId = null;
 
 
-initializeSlider();
+document.addEventListener("DOMContentLoaded", initializeSlider);
 
 function initializeSlider() {
     if (slides.length > 0) {
