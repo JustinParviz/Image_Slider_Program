@@ -1,5 +1,6 @@
 // IMAGE SLIDER
 
+
 const slides = document.querySelectorAll(".slides img");
 let slideIndex = 0;
 let intervalId = null;
@@ -10,7 +11,7 @@ document.addEventListener("DOMContentLoaded", initializeSlider);
 function initializeSlider() {
     if (slides.length > 0) {
         slides[slideIndex].classList.add("displaySlide");
-        intervalId = setInterval(nextSlide, 5000);
+        intervalId = setInterval(nextSlide, 5000);  // The setInterval function moves the slides forward every 5 seconds
     }
 }
 
@@ -30,7 +31,7 @@ function showSlide(index) {
 }
 
 function prevSlide() {
-    clearInterval(intervalId);
+    clearInterval(intervalId);  // Stops the interval whenever I hit the previous button
     slideIndex--;
     showSlide(slideIndex);
 }
